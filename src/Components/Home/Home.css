@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    margin-top: 20%;
+    
+}
+
+.button {
+   margin: 10px;
+   padding: 25px;
+   background-color: rgb(244, 7, 7);
+   border: 2px black solid;
+   box-shadow: 5px 10px black;
+}
+
+.button:hover {
+    color: white;
+}

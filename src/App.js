@@ -1,10 +1,9 @@
-// import logo from './logo.svg';
-// import './App.css';
 import Consoles from './Components/Consoles/Consoles.js';
-//import {Route, Router, Routes} from "react-router-dom";
 import Home from './Components/Home/Home.js'; 
-//import { Router, Routes, Route } from 'react-router-dom';
+import Games from './Components/Games/Games.js';
+import Tshirts from './Components/Tshirts/Tshirts.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -12,12 +11,13 @@ function App() {
     <Router>
        <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/signup" element={<Signup />} /> */}
+          {/* <main className="container"> */}
+          <Route path="/consoles" element={<Consoles />} />
+          <Route path="/games" element={<Games />} />
+          <Route path="/tshirts" element={<Tshirts />} />
+          {/* </main> */}
        </Routes>
     </Router>
-    <main className="container">
-      <Consoles />
-    </main>
     </>
   );
 }

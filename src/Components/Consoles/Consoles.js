@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './Consoles.css';
 import ConsoleCard from './ConsoleCard.js';
 import ConsoleForm from './ConsoleForm.js';
+import {NavLink } from 'react-router-dom';
 
 function Consoles() {
 
@@ -83,6 +84,9 @@ function Consoles() {
                     </tbody>
                 </table>
             </div>
+            <NavLink to="/">
+           <button>Home</button>
+           </NavLink>
         </>
     )
 
