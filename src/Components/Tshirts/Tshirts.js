@@ -19,7 +19,7 @@ function Tshirts() {
 
     function addClick() {
         
-        setScopedTshirt({ tshirtId: 0, model: "", manufacturer: "", memoryAmount: "", processor:"", price: 0.00, quantity: 0 });
+        setScopedTshirt({ t_shirt_id: 0, color: "", size: "", description: "", price: 0.00, quantity: 0 });
         setShowForm(true);
     }
 
@@ -37,7 +37,7 @@ function Tshirts() {
                 break;
             case "edit":
                 setTshirts(tshirts.map(e => {
-                    if (e.tshirtId === tshirt.tshirtId) {
+                    if (e.t_shirt_id === tshirt.t_shirt_id) {
                         return tshirt;
                     }
                     return e;
@@ -48,7 +48,7 @@ function Tshirts() {
                 setShowForm(true);
                 return;
             case "delete":
-                setTshirts(tshirts.filter(e => e.tshirtId !== tshirt.tshirtId));
+                setTshirts(tshirts.filter(e => e.t_shirt_id !== tshirt.t_shirt_id));
                 break;
                 default:
                 tshirt.log("INVALID ACTION!" + action);
@@ -71,10 +71,9 @@ function Tshirts() {
                 <button className="btn btn-primary" type="button" onClick={addClick}>Add a Tshirt</button>
                 <table id='tshirts'>
                     <tr>
-                        <th>Model</th>
-                        <th>Manufacturer</th>
-                        <th>Memory Amount</th>
-                        <th>Processor</th>
+                        <th>Color</th>
+                        <th>Size</th>
+                        <th>Description</th>
                         <th>Price</th>
                         <th>Quantity</th>
                     </tr>
