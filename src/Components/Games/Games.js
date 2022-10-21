@@ -37,6 +37,7 @@ function Games() {
                 setGames([...games, game]);
                 break;
             case "edit":
+                console.log(game)
                 setGames(games.map(e => {
                     if (e.gameId === game.gameId) {
                         return game;
