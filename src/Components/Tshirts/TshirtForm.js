@@ -78,7 +78,7 @@ function TshirtForm({ tshirt: initialTshirt, notify }) {
                     <label htmlFor="quantity">Quantity</label>
                     <input type="text" id="quantity" name="quantity"
                         className="form-control"
-                        value={game.quantity} onChange={handleChange} />
+                        value={tshirt.quantity} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <button className="btn btn-primary mr-3" type="submit">Save</button>
