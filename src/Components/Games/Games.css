@@ -1,0 +1,23 @@
+#GamesTitle {
+    text-align: center;
+  }
+  
+  #buttonPanel {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  #games {
+    text-align: left;
+    width: 100%;
+  }
+  
+  #games td, #games th {
+    border: 1px solid;
+    padding: 10px;
+  }
+  
+  #deleteButton {
+    margin: 0 10px 0 0;
+  }
+  
