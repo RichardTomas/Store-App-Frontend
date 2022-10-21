@@ -48,37 +48,37 @@ function TshirtForm({ tshirt: initialTshirt, notify }) {
 
     return (
         <>
-            <h1>{tshirt.tshirtId > 0 ? "Edit" : "Add"} Tshirt</h1>
+            <h1>{tshirt.t_shirt_id > 0 ? "Edit" : "Add"} Tshirt</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
-                    <label htmlFor="model">Model</label>
-                    <input type="text" id="model" name="model"
+                    <label htmlFor="color">Color</label>
+                    <input type="text" id="color" name="color"
                         className="form-control"
-                        value={tshirt.model} onChange={handleChange} />
+                        value={tshirt.color} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="manufacturer">Manufacturer</label>
-                    <input type="text" id="manufacturer" name="manufacturer"
+                    <label htmlFor="size">Size</label>
+                    <input type="text" id="size" name="size"
                         className="form-control"
-                        value={tshirt.manufacturer} onChange={handleChange} />
+                        value={tshirt.size} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="memoryAmount">Memory Amount</label>
-                    <input type="text" id="memoryAmount" name="memoryAmount"
+                    <label htmlFor="description">Description</label>
+                    <input type="text" id="description" name="description"
                         className="form-control"
-                        value={tshirt.memoryAmount} onChange={handleChange} />
-                </div>
-                <div className="mb-3">
-                    <label htmlFor="processor">Processor</label>
-                    <input type="text" id="processor" name="processor"
-                        className="form-control"
-                        value={tshirt.processor} onChange={handleChange} />
+                        value={tshirt.description} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <label htmlFor="price">Price</label>
                     <input type="text" id="price" name="price"
                         className="form-control"
                         value={tshirt.price} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
+                    <label htmlFor="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity"
+                        className="form-control"
+                        value={game.quantity} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
                     <button className="btn btn-primary mr-3" type="submit">Save</button>
