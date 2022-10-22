@@ -53,7 +53,7 @@ function Games() {
                 setGames(games.filter(e => e.gameId !== game.gameId));
                 break;
                 default:
-                game.log("INVALID ACTION!" + action);
+                console.log("INVALID ACTION!" + action);
                 alert("INVALID ACTION!" + action);
         }
         
