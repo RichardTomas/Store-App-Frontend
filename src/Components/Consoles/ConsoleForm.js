@@ -82,6 +82,12 @@ function ConsoleForm({ console: initialConsole, notify }) {
                         value={console.price} onChange={handleChange} />
                 </div>
                 <div className="mb-3">
+                    <label htmlFor="quantity">Quantity</label>
+                    <input type="text" id="quantity" name="quantity"
+                        className="form-control"
+                        value={console.quantity} onChange={handleChange} />
+                </div>
+                <div className="mb-3">
                     <button className="btn btn-primary mr-3" type="submit">Save</button>
                     <button className="btn btn-secondary" type="button" onClick={() => notify({ action: "cancel" })}>Cancel</button>
                 </div>
