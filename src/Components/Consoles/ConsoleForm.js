@@ -1,4 +1,3 @@
-import { ErrorResponse } from '@remix-run/router';
 import { useState } from 'react';
 
 function ConsoleForm({ console: initialConsole, notify }) {
@@ -37,7 +36,7 @@ function ConsoleForm({ console: initialConsole, notify }) {
                         return console;
                     } 
                 }
-                  return Promise.reject(`Didn't receive expected status: ${expectedStatus}`);
+                return Promise.reject(`Didn't receive expected status: ${expectedStatus}`);
             })
             .then(result => notify({
                 action: isAdd ? "add" : "edit",

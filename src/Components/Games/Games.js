@@ -29,6 +29,7 @@ function Games() {
         if (error) {
             setError(error);
             setShowForm(false);
+            alert("There was an error: " + error)
             return;
         }
 
@@ -37,7 +38,6 @@ function Games() {
                 setGames([...games, game]);
                 break;
             case "edit":
-                console.log(game)
                 setGames(games.map(e => {
                     if (e.gameId === game.gameId) {
                         return game;

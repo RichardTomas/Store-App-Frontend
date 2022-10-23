@@ -29,6 +29,7 @@ function Tshirts() {
         if (error) {
             setError(error);
             setShowForm(false);
+            alert("There was an error: " + error)
             return;
         }
 
@@ -51,8 +52,12 @@ function Tshirts() {
             case "delete":
                 setTshirts(tshirts.filter(e => e.t_shirt_id !== tshirt.t_shirt_id));
                 break;
-                default:
-                tshirt.log("INVALID ACTION!" + action);
+                    //There was no case for cancel
+            case "cancel":
+                setShowForm(false);
+                break;
+            default:
+                console.log("INVALID ACTION!" + action);
                 alert("INVALID ACTION!" + action);
         }
         
