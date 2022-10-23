@@ -3,7 +3,7 @@ import { useState } from 'react';
 function TshirtForm({ tshirt: initialTshirt, notify }) {
 
     const [tshirt, setTshirt] = useState(initialTshirt);
-    const isAdd = initialTshirt.tshirtId === 0;
+    const isAdd = initialTshirt.t_shirt_id === 0;
 
     function handleChange(evt) {
         const clone = { ...tshirt };
