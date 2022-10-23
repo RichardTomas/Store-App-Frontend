@@ -52,9 +52,13 @@ function Games() {
             case "delete":
                 setGames(games.filter(e => e.gameId !== game.gameId));
                 break;
+                //There was no case for cancel
+                case "cancel":
+                    setShowForm(false);
+                    break;
                 default:
-                game.log("INVALID ACTION!" + action);
-                alert("INVALID ACTION!" + action);
+                    console.log("INVALID ACTION!" + action);
+                    alert("INVALID ACTION!" + action);
         }
         
         setError("");

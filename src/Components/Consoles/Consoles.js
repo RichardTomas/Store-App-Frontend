@@ -29,6 +29,7 @@ function Consoles() {
         if (error) {
             setError(error);
             setShowForm(false);
+            alert("There was an error: " + error)
             return;
         }
 
@@ -51,9 +52,14 @@ function Consoles() {
             case "delete":
                 setConsoles(consoles.filter(e => e.consoleId !== console.consoleId));
                 break;
-                default:
+                //There was no case for cancel
+            case "cancel":
+                setShowForm(false);
+                break;
+            default:
                 console.log("INVALID ACTION!" + action);
                 alert("INVALID ACTION!" + action);
+
         }
         
         setError("");
