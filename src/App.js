@@ -4,6 +4,7 @@ import Games from './Components/Games/Games.js';
 import Tshirts from './Components/Tshirts/Tshirts.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+//Most of this app was copy/paste from Dan the danimal!
 
 function App() {
   return (
